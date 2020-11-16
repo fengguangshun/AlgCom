@@ -1,13 +1,17 @@
+
+
 #include <stdio.h>
 #include <math.h>
 
 int main()
 {
 
-  int n, m;
+  int a, b, t;
 
-  scanf("%d", &n);
+  scanf("%d%d", &a, &b);
+  t = a;
+  a = b;
+  b = t;
   
-  m = (n%10)*100 + (n/10%10)*10 + n/100;
-  printf("%03d\n", m);
+  printf("%d %d\n", a, b);
 }
